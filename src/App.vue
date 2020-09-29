@@ -66,6 +66,9 @@
                   </div>
               </div>
           </div>
+          <footer>
+            <p class="font-montserrat font-bold text-sm text-copy-ternary text-center">Nisarg Patel @ Devchallenges.io</p>
+          </footer>
       </div>
     </div>
 </div>
@@ -76,12 +79,12 @@ import axios from 'axios';
 export default {
     name: 'App',
     created() {
-        this.currentTheme = localStorage.getItem('theme') || 'theme-light';
+        this.currentTheme = localStorage.getItem('theme') || 'theme-dark';
     },
     mounted() { this.randomQuote() },
     data() {
         return {
-            currentTheme: 'theme-light', //By default theme for the site,
+            currentTheme: 'theme-dark', //By default theme for the site,
             quote: null,
             //Api status
             loading: true,
